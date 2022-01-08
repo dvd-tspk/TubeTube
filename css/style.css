@@ -1,0 +1,618 @@
+* {
+    font-family: "Roboto", "Arial", sans-serif;
+}
+
+/* @font-face {
+    font-family: "Press_Start_2P";
+    src: url("../fonts/Press_Start_2P/PressStart2P-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+} */
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto/Roboto-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto/Roboto-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* border box fix */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: gray;
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    width: 500px;
+    height: 1000px;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+.tubetube {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    
+}
+
+.navbar {
+    background-color: hsl(0, 0%, 13%);
+    height: 6%;
+    /* position: relative; */
+    overflow: hidden;
+}
+
+.tubetube-logo {
+    height: 100%;
+    width: 30%;
+    /* display: inline-block; */
+    /* position: relative; */
+    overflow: hidden;   /* optional? */
+    margin-right: 20%;
+    float: left;
+}
+
+.tubetube-logo img {
+    height: 50%;
+    /* width: 30%; */
+    /* position: absolute; */
+    float: left;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 2%;
+    /* left: 5px;
+    top: 5px; */
+    /* display: inline-block; */
+}
+
+.tubetube-logo span {
+    color: white;
+    font-weight: bold;
+    /* font-family: "Press_Start_2P"; */
+    font-size: 115%;
+    /* letter-spacing: -1px; */
+    /* position: absolute; */
+    float: left;
+    transform: scaleY(1.7);
+    /* display: inline-block; */
+    margin-top: 14%;
+    /* margin-bottom: 5px; */
+}
+
+.navbar-search-btn {
+    height: 45%;
+    /* display: inline-block; */
+    margin-top: 16px;
+    /* margin-left: 1%; */
+    /* height: 50%; */
+    float: left;
+}
+
+.navbar-search-btn img {
+    height: 100%;
+    filter: invert(100%);   /* Change image color from black to white */
+}
+
+.navbar-kebab-btn {
+    height: 45%;
+    /* display: inline-block; */
+    float: left;
+    margin-top: 16px;
+    margin-left: 6%;
+}
+
+.navbar-kebab-btn img {
+    height: 100%;
+    filter: invert(100%);   /* Change image color from black to white */
+}
+
+.navbar-sign-in-btn {
+    height: 80%;
+    width: 28%;
+    margin-right: 2%;
+    /* display: inline-block; */
+    border: 3px;
+    border-color: green;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 4px 8px;
+    float: right;
+    margin-top: 6px;
+    /* box-sizing: content-box; */
+    overflow: hidden;   /* Optional? */
+}
+
+.navbar-sign-in-btn img {
+    height: 30px;
+    filter: invert(100%);   /* Change image color from black to white */
+    float: left;
+    margin-top: 2px;
+    margin-right: 10%;
+}
+
+.navbar-sign-in-btn span {
+    /* display: inline-block; */
+    color: white;
+    font-size: 115%;
+    float: left;
+    margin-top: 5%;
+}
+
+
+
+.video {
+    height: 26%;
+    /* background-color: yellowgreen; */
+    position: relative;
+    overflow: hidden;
+}
+
+.current-video {
+    height: 100%;
+    width: 100%;
+    filter: brightness(80%);
+}
+
+.autoplay-btn-switch {
+    height: 20px;
+    width: 40px;
+    position: absolute;
+    top: 25px;
+    right: 70px;
+    background-color: hsl(0, 0%, 57%);
+    border-radius: 45%;
+}
+
+.autoplay-btn {
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    top: 22px;
+    right: 85px;
+    filter: invert(100%);   /* Change image color from black to white */
+}
+
+.settings-btn {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    filter: invert(100%);   /* Change image color from black to white */
+}
+
+.video-controls {
+    height: 44px;
+    width: 300px;
+    position: absolute;
+    /* Useful trick for centering positioned elements */
+    top: 50%;
+    margin-top: -22px;
+    left: 50%;
+    margin-left: -150px;
+    /* ////////// */
+}
+
+.rewind-btn {
+    height: 34px;
+    width: 34px;
+    margin: 5px 0;
+    filter: invert(100%);   /* Change image color from black to white */
+}
+
+.play-btn {
+    height: 44px;
+    width: 40px;
+    filter: invert(100%);   /* Change image color from black to white */
+    margin: 0 92px;                                                         /* Why is this only working with 92px instead of 96px? (300-34-34-40)/2=192/2 */
+}
+
+.forward-btn {
+    height: 34px;
+    width: 34px;
+    margin: 5px 0;
+    filter: invert(100%);   /* Change image color from black to white */
+}
+
+.video-progress-bar-wrap {
+    position: absolute;
+    bottom: 0;
+    height: 20%;
+    width: 100%;
+}
+
+.video-progress-time {
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    left: 20px;
+
+    color: white;
+    font-size: 90%;
+}
+
+/* Video progress time second half color */
+.video-progress-time span {
+    color: hsl(0, 0%, 71%);
+}
+
+/* .video-progress-bar {
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    left: 120px;
+    height: 10px;
+    width: 300px;
+}
+
+.video-progress-bar-loaded {
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    left: 120px;
+    height: 10px;
+    width: 300px;
+}
+
+.video-progress-bar-current {
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    left: 120px;
+    height: 10px;
+    width: 300px;
+} */
+
+.video-progress-bar {
+    position: absolute;
+    top: 50%;
+    margin-top: -4px;
+    left: 120px;
+    height: 8px;
+    width: 310px;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 57%);
+    opacity: 0.7;
+}
+
+.video-progress-bar-loaded {
+    position: absolute;
+    top: 50%;
+    margin-top: -4px;
+    left: 120px;
+    height: 8px;
+    width: 145px;
+    border-radius: 10px;
+    background-color: white;
+    opacity: 0.7;
+}
+
+.video-progress-bar-current {
+    position: absolute;
+    top: 50%;
+    margin-top: -4px;
+    left: 120px;
+    height: 8px;
+    width: 105px;
+    border-radius: 10px;
+    background-color: green;
+}
+
+.video-progress-bar-blob {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    left: 215px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: green;
+}
+
+.fullscreen-btn {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    right: 20px;
+    height: 20px;
+    width: 20px;
+}
+
+
+
+.video-info-wrap {
+    height: 9%;
+    /* border: 1px;
+    border-color: black;
+    border-style: solid; */
+    overflow: hidden;
+    position: relative;
+}
+
+.video-info-wrap img {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    height: 15px;
+    width: 20px;
+    filter: invert(60%);    /* Change image color from black to gray */
+}
+
+.video-info {
+    height: 85%;
+    width: 410px;
+    margin-left: 15px;
+    margin-top: 3%;
+    /* border-color: black;
+    border-width: 1px;
+    border-style: solid; */
+}
+
+.video-title {
+    height: 70%;
+    width: 100%;
+    font-size: 130%;
+    margin-bottom: 1%;
+    /* text-overflow: ellipsis; */
+    overflow: hidden;
+    /* white-space: nowrap; */
+}
+
+.video-stats {
+    font-size: 90%;
+    color: gray;
+}
+
+.action-buttons-wrap {
+    height: 8%;
+    /* border: 1px;
+    border-color: black;
+    border-style: solid; */
+}
+
+.action-buttons {
+    margin: auto;
+    width: 416px;                                               /* Why is this only working with 416px instead of 400px? (60+10+10)*5=80*5 */
+    height: 80px;
+}
+
+.like-btn, .dislike-btn, .share-btn, .save-btn, .report-btn {
+    height: 55px;
+    width: 60px;
+    display: inline-block;
+    margin: 23px 10px 2px;
+    /* border-style: solid;
+    border-color: black;
+    border-width: 1px; */
+
+    text-align: center;
+    font-size: 85%;
+    color: gray;
+
+}
+
+.like-btn img, .dislike-btn img, .share-btn img, .save-btn img, .report-btn img {
+    height: 25px;
+    width: 25px;
+    filter: invert(60%);    /* Change image color from black to gray */
+    margin: 0 auto 8px;
+    display: block;
+}
+
+
+
+.channel-bar {
+    height: 7%;
+    border: 2px;
+    border-color: rgb(235, 235, 235);
+    border-style: solid none;
+    position: relative;
+}
+
+.channel-info {
+    height: 70%;
+    width: 50%;
+    /* float: left; */
+    position: absolute;
+    top: 15%;
+}
+
+.channel-bar img {
+    height: 100%;
+    border-radius: 50%;
+    margin: 0 12px;
+    position: absolute;
+}
+
+.channel-name {
+    position: absolute;
+    top: 0;
+    left: 70px;
+    font-size: 120%;
+}
+
+.subscriber-count {
+    position: absolute;
+    bottom: 0;
+    left: 70px;
+    font-size: 85%;
+    color: gray;
+}
+
+.subscribe-btn {
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    right: 20px;
+    font-weight: bold;
+    font-size: 113%;
+    color: green;
+    padding: 16px;
+}
+
+
+
+.comments {
+    height: 6%;
+    position: relative;
+    border: 3px;
+    border-color: rgb(235, 235, 235);
+    border-style: none none solid;
+}
+
+.comments span {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    margin-top: -9px;
+    font-size: 120%;
+    font-weight: 400;
+}
+
+.comments span i {
+    font-style: normal;
+    color: gray;
+}
+
+.comments img {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 50%;
+    margin-top: -10px;
+    right: 17px;
+    filter: invert(60%);    /* Change image color from black to gray */
+}
+
+.scrollable {
+    height: 100%;
+    overflow: auto;
+    /* Making the scrollbar invisible */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.scrollable::-webkit-scrollbar {
+    display: none;
+}
+    /* ////////// */
+
+.up-next {
+    font-size: 120%;
+    margin: 12px 12px 0;
+}
+
+.suggestion {
+    height: 360px;
+    width: 476px;
+    margin: 12px;
+}
+
+.suggestion-preview {
+    height: 268px;
+    width: 100%;
+}
+
+.suggestion-info {
+    height: 80px;
+    width: 476px;
+    margin-top: 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.suggestion-channel-logo {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.suggestion-title {
+    height: 45px;
+    width: 310px;
+    font-size: 120%;
+    position: absolute;
+    top: 5px;
+    left: 70px;
+    overflow: hidden;
+}
+
+.suggestion-stats {
+    font-size: 90%;
+    color: gray;
+    position: absolute;
+    top: 55px;
+    left: 70px;
+}
+
+.suggestion-settings-btn {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

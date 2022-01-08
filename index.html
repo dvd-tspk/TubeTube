@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+
+  <title>TubeTube</title>
+
+  <!-- Importing favicon -->
+  <link rel="icon" type="image/x-icon" href="img/favicon.png">
+
+  <!-- Importing styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="wrap">
+    
+    <div class="tubetube">
+      
+      <!-- Navigation bar -->
+      <nav class="navbar">
+
+        <!-- TubeTube navbar logo-->
+        <div class="tubetube-logo">
+          <!-- <span> -->
+            <img src="img/tubetube.png" alt="Tubetube logo">
+          <!-- </span> -->
+          <!-- <span> -->
+            <span>TubeTube</span>
+          <!-- </span> -->
+        </div>
+
+        <!-- Navbar buttons -->
+        <span class="navbar-search-btn">
+          <img src="img/search.png" alt="Search button">
+        </span>
+
+        <span class="navbar-kebab-btn">
+          <img src="img/kebab-menu.png" alt="Kebab menu button">
+        </span>
+
+        <div class="navbar-sign-in-btn">
+          <img src="img/person-icon.png" alt="Sign in button">
+          <span>
+            SIGN IN
+          </span>
+        </div>
+
+      </nav>
+
+      <!-- Video playback area -->
+      <div class="video">
+        <img class="current-video" src="img/plumbing.jpg" alt="Current video">
+
+        <!-- Video playback buttons -->
+        <span class="autoplay-btn-switch"></span>
+        <img class="autoplay-btn" src="img/pause.png" alt="Autoplay">
+        <img class="settings-btn" src="img/settings.png" alt="Video settings">
+        
+        <!-- Video controls -->
+        <div class="video-controls">
+          <img class="rewind-btn" src="img/rewind.png" alt="Previous video">
+          <img class="play-btn" src="img/play.png" alt="Pause video">
+          <img class="forward-btn" src="img/forward.png" alt="Next video">
+        </div>
+
+        <!-- Video progress bar -->
+        <div class="video-progress-bar-wrap">
+          <span class="video-progress-time">9:42 <span>/ 28:13</span></span>
+          <span class="video-progress-bar"></span>
+          <span class="video-progress-bar-loaded"></span>
+          <span class="video-progress-bar-current"></span>
+          <!-- <progress class="video-progress-bar" value="100" max="100"></progress>
+          <progress class="video-progress-bar-loaded" value="47" max="100"></progress>
+          <progress class="video-progress-bar-current" value="34" max="100"></progress> -->
+          <span class="video-progress-bar-blob"></span>
+          <img class="fullscreen-btn" src="img/fullscreen.png" alt="Switch to full screen">
+        </div>
+      </div>
+
+      <div class="scrollable">
+
+        <!-- Video title area -->
+        <div class="video-info-wrap">
+          <div class="video-info">
+            <div class="video-title">Plubming Journey Episode 31 | Drainage Basics (Part 2)</div>
+            <div class="video-stats">1.3M views &#8226; 1 year ago</div>
+          </div>
+          <img class="collapse-desc-btn" src="img/arrow-down.png" alt="Collapse description">
+        </div>
+
+        <!-- Video action buttons -->
+        <div class="action-buttons-wrap">
+          <div class="action-buttons">
+            <div class="like-btn">
+              <img src="img/like.png" alt="Like button">
+              62K
+            </div>
+            <div class="dislike-btn">
+              <img src="img/dislike.png" alt="Dislike button">
+              3.2K
+            </div>
+            <div class="share-btn">
+              <img src="img/share.png" alt="Share button">
+              Share
+            </div>
+            <div class="save-btn">
+              <img src="img/save.png" alt="Save button">
+              Save
+            </div>
+            <div class="report-btn">
+              <img src="img/report.png" alt="Report button">
+              Report
+            </div>
+          </div>
+        </div>
+
+        <!-- Video channel bar -->
+        <div class="channel-bar">
+          <div class="channel-info">
+            <img src="img/plumbing-logo.jpg" alt="Channel profile picture">
+            <div class="channel-name">
+              Plumbin' 101
+            </div>
+            <div class="subscriber-count">
+              1.4M subscribers
+            </div>
+          </div>
+          <div class="subscribe-btn">
+            SUBSCRIBE
+          </div>
+        </div>
+
+        <!-- Video comments -->
+        <div class="comments">
+          <span>Comments <i>&#8226; 1,582</i></span>
+          <img src="img/arrow-up-down.png" alt="Collapse comments">
+        </div>
+
+        <!-- Video suggestion feed -->
+        <div class="suggestions">
+          <div class="up-next">
+            Up next
+          </div>
+          <div class="suggestion">
+            <img class="suggestion-preview" src="img/quantum-computer.jpeg" alt="Video preview">
+            <div class="suggestion-info">
+              <img class="suggestion-channel-logo" src="img/quantum-computer-logo.jpg" alt="Channel profile picture">
+              <div class="suggestion-title">Quantum Tubing of the Future - Science Fridays #24</div>
+              <div class="suggestion-stats">Plubmmore &#8226; 32K views</div>
+              <img class="suggestion-settings-btn" src="img/kebab-menu.png" alt="Video suggestion settings">
+            </div>
+          </div>
+          <div class="suggestion">
+            <img class="suggestion-preview" src="img/aquapark.png" alt="Video preview">
+            <div class="suggestion-info">
+              <img class="suggestion-channel-logo" src="img/aquapark-logo.jpg" alt="Channel profile picture">
+              <div class="suggestion-title">Don't be Afraid to Dream Big | Maximize your potential</div>
+              <div class="suggestion-stats">Plumbeneur &#8226; 567K views</div>
+              <img class="suggestion-settings-btn" src="img/kebab-menu.png" alt="Video suggestion settings">
+            </div>
+          </div>
+          <div class="suggestion">
+            <img class="suggestion-preview" src="img/puzzle.jpg" alt="Video preview">
+            <div class="suggestion-info">
+              <img class="suggestion-channel-logo" src="img/puzzle-logo.jpeg" alt="Channel profile picture">
+              <div class="suggestion-title">Only 2% Can Solve This Puzzle Without Help!</div>
+              <div class="suggestion-stats">TubingOn - Weekly Puzzles &#8226; 3.5M views</div>
+              <img class="suggestion-settings-btn" src="img/kebab-menu.png" alt="Video suggestion settings">
+            </div>
+          </div>
+          <div class="suggestion">
+            <img class="suggestion-preview" src="img/straws.jpg" alt="Video preview">
+            <div class="suggestion-info">
+              <img class="suggestion-channel-logo" src="img/straws-logo.png" alt="Channel profile picture">
+              <div class="suggestion-title">Micro plumbing and its effects on the ocean</div>
+              <div class="suggestion-stats">Tube Ninja &#8226; 265K views</div>
+              <img class="suggestion-settings-btn" src="img/kebab-menu.png" alt="Video suggestion settings">
+            </div>
+          </div>
+          <div class="suggestion">
+          </div>
+          <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptates modi quae maiores unde voluptatem eaque, dolorum, blanditiis ab, minima quam debitis? A quam nobis perspiciatis ad ipsa veritatis eius, porro numquam repellat dicta saepe eligendi sequi delectus! Magni dignissimos alias laboriosam debitis illo quas error delectus similique nam consequatur dolorum temporibus dolore, aliquam autem recusandae maxime molestiae, harum quia libero, doloribus necessitatibus veniam architecto dolor beatae. Aut consequuntur dignissimos maxime quas rem blanditiis doloribus cumque debitis nostrum modi, nobis, nisi molestias. Sit eveniet, laborum perferendis nemo cupiditate placeat a, reprehenderit earum dolores itaque impedit recusandae nobis voluptatum ullam! Quidem vel quam alias architecto cupiditate doloribus maiores ab, velit quasi et sapiente vitae quia voluptas modi itaque inventore tempora veritatis? Quos neque beatae laudantium, recusandae, quo aspernatur iusto consequatur vitae sunt suscipit, illum voluptas nihil blanditiis porro provident. Ex magni nobis dolorum facere laboriosam, odio molestias est accusantium, commodi earum natus corporis optio facilis illum voluptatem obcaecati blanditiis voluptas cumque repellat numquam unde at temporibus. Cumque tempore dolorem maxime laudantium totam. Eligendi dignissimos animi labore quia explicabo eaque debitis cupiditate, ex quis quasi obcaecati delectus, distinctio placeat amet dolor molestias minus doloremque illum aut modi voluptate earum excepturi? Ratione laborum hic maxime quaerat asperiores rerum doloremque veniam architecto aliquid ad, qui accusamus soluta quidem blanditiis magnam cupiditate sunt commodi veritatis facilis sapiente esse ab provident? Illum impedit accusamus ea. Numquam atque minima reiciendis culpa quos ipsam neque dolores dolorum, ad, eos, voluptatibus vel? Quidem eligendi eius culpa non sequi laborum vel cumque fuga repellendus consequuntur quaerat necessitatibus corrupti voluptate hic ex asperiores recusandae sed iste, fugiat commodi veniam at a nihil rerum! A maiores dignissimos animi eius id odio, consequatur iste doloremque molestiae, libero qui distinctio quibusdam impedit harum aut ipsam, provident commodi minima blanditiis atque mollitia quam quos autem quo. Nemo quidem repudiandae autem animi quaerat ea est dolores, itaque doloribus repellat reprehenderit eum natus quod, harum, nam rem quia? Aut dolore sunt magni nam maxime magnam eum doloremque. Soluta blanditiis totam esse atque voluptatum non error dolor id aliquid aperiam ex velit molestiae, est mollitia ullam quod ratione sed? Expedita sapiente facere repudiandae dolor dignissimos, quibusdam consequuntur totam inventore nobis accusamus eveniet deleniti id, ex animi mollitia. Et dolore iusto adipisci eveniet! Est eaque esse unde id reiciendis rerum ad, sequi eveniet fuga veniam perspiciatis, laborum dolores ab, alias sunt totam commodi soluta ipsam neque odit natus nemo quidem! Cum unde dolor odit optio ab earum aliquid, distinctio reiciendis voluptatibus, voluptas similique hic porro nisi totam est exercitationem repellat ipsum tenetur illum quod quo natus tempora molestias. Molestias illum dicta, reiciendis atque ab voluptatibus, sed cum eum nisi est, ut eius quae sequi quia at error hic dignissimos numquam illo corrupti maiores dolore provident expedita? Dolores maiores laboriosam itaque dolorem dicta accusantium veritatis repellendus beatae enim cum tempore magnam placeat eaque nisi corporis iure, non in? Quis iure commodi pariatur architecto quo doloribus eum eveniet? Quos architecto magnam, totam praesentium odio saepe dolores soluta necessitatibus? Incidunt, illo explicabo?
+          L1orem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quo expedita sunt recusandae a eius dolor molestias odio accusantium pariatur veritatis quod, explicabo quam, nesciunt eum non blanditiis corporis doloremque quia obcaecati eaque animi facere atque illum? Assumenda repellat voluptate veritatis laboriosam esse in et sapiente doloribus tenetur sequi explicabo laborum, doloremque culpa impedit libero non asperiores totam iusto id nisi quam nostrum. Blanditiis minus consequuntur soluta vel est, distinctio quod non ratione earum nihil, impedit eaque deserunt! Non mollitia eos quia quos maxime dolorum voluptatem aut possimus, impedit alias corrupti, itaque quas delectus optio. Pariatur recusandae modi tempore veritatis! -->
+        </div>
+        <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa accusantium, soluta, iste earum sed odit eius magnam doloremque obcaecati illum corrupti totam minima commodi ipsum dolores nam! Distinctio deleniti voluptatibus animi dolores ipsa! Omnis cum voluptatem reprehenderit nemo quasi dolorem sequi corrupti, excepturi explicabo debitis, impedit assumenda ipsum non repudiandae optio blanditiis dignissimos et dolorum doloribus. Beatae fugit, sit illum impedit hic, harum vel error unde pariatur sapiente, doloribus aspernatur repudiandae et ipsum placeat dolor iure ad. Nesciunt quidem voluptates illum eius cupiditate reiciendis cum? Possimus nam quod, delectus sunt rerum nobis explicabo eius! Officiis atque at perspiciatis aliquid fugit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus deleniti non necessitatibus quis delectus quisquam et. Minima omnis dolor quibusdam odio, non recusandae quam mollitia dolores illo? Ut, ea possimus?
+        L2orem ipsum dolor sit amet, consectetur adipisicing elit. Et sit dolor quisquam saepe libero molestias quidem cumque, cupiditate excepturi maiores. Quos eum saepe, nihil illum ab sint adipisci reprehenderit qui? -->
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
